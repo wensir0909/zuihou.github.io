@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缘起</title>
+    <script TYPE="text/javascript"> 	 
+        var docEl = document.documentElement;
+           function setRemUnit () {
+             var rem = docEl.clientWidth / 22.4; // 可根据不同电脑分辨率进行手动修改（如1920*1080 为19.2
+             docEl.style.fontSize = rem + 'px'
+           }
+      
+           setRemUnit()
+      
+           window.addEventListener('resize', setRemUnit)
+           window.addEventListener('pageshow', function (e) {
+             if (e.persisted) {
+               setRemUnit()
+             }
+        })
+      </script>
+    <style>
+        .box1{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        background: url(./image/微信图片_20230807204944.jpg) no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box2{
+        position: absolute;
+        width: 85vw;
+        height: 90vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);     
+        border-radius: 10px;
+        background: rgba(225, 225, 225, 0.5);
+        overflow: hidden;
+    }
+    .one{
+        position: absolute;
+        font-family: 华文行楷;
+        font-size: 0.65rem;
+        color: black;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%,-50%);
+    }
+    img{
+        position: absolute;
+        width: 65vw;
+        height: 90vh;
+        left: 60%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .three{
+        position: absolute;
+        width: 65vw;
+        height: 70vh;
+        left: 90%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .com{
+        position: absolute;
+        width: 8vw;
+        height: 5vh;
+        left: 54%;
+        top: 10%;
+        transform: translate(-50%,-50%);
+        background: rgba(225, 225, 225, 0.7);
+        border: none;
+        border-radius: 5px;
+    }
+    .four{
+        position: absolute;
+        font-family: 华文行楷;
+        font-size: 0.65rem;
+        color: black;
+        left: 45%;
+        top: 10%;
+        transform: translate(-50%,-50%);
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="box1">
+        <div class="box2">
+            <div class="one">
+               请选择性别
+            </div>
+               <a href="https://wensir0909.github.io/wenxiaojingdexiangmu.github.io/"><img src="./image/女主人公 8.14.png"  title="女"></a>
+           
+            <div class="three">
+               <a href=""><img src="./image/男主 8.14.png" title="男"></a>
+            </div>
+           <div>
+                <label for="user" class="four">昵称:</label>
+                <input type="text" id="user" name="username" class="com">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
